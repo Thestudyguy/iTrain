@@ -16,6 +16,13 @@ type Course = {
 
 const courses: Course[] = [
   {
+  icon: '🚜', category: 'Heavy Equipment',
+  title: 'Heavy Equipment Operation (Hydraulic Excavator) NC II',
+  duration: '3 months', level: 'NC II', slots: 15,
+  desc: 'Operate hydraulic excavators safely and efficiently for earthmoving, trenching, and construction site operations in compliance with TESDA standards.',
+  topics: ['Excavator controls & systems', 'Earthmoving techniques', 'Trenching & grading', 'Equipment pre-operation checks', 'Workplace safety & signaling'],
+},
+  {
     icon: '💻', category: 'ICT',
     title: 'Computer Systems Servicing NC II',
     duration: '3 months', level: 'NC II', slots: 25,
@@ -73,7 +80,7 @@ const courses: Course[] = [
   },
 ]
 
-const categories = ['All', 'ICT', 'Electrical', 'Automotive', 'Welding', 'Electronics', 'Construction']
+const categories = ['All', 'ICT', 'Electrical', 'Automotive', 'Welding', 'Electronics', 'Construction', 'Heavy Equipment']
 
 export default function Courses() {
   const [active, setActive] = useState('All')
