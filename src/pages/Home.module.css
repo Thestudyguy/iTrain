@@ -1,0 +1,326 @@
+.hero {
+  position: relative;
+  background: var(--navy);
+  padding: 9rem 0 5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(26, 86, 219, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 60%);
+}
+
+.heroContent {
+  position: relative;
+  max-width: 700px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(26, 86, 219, 0.2);
+  border: 1px solid rgba(26, 86, 219, 0.4);
+  color: var(--blue-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.heroContent h1 {
+  font-size: clamp(2.8rem, 6vw, 4.25rem);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.heroAccent { color: var(--gold); }
+
+.heroContent p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 560px;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.heroCta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.heroChecks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.heroChecks li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+}
+
+.heroChecks svg { color: var(--gold); }
+
+/* STATS */
+.statsSection {
+  padding: 2.5rem 0;
+  background: var(--navy-mid);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+}
+
+.statCard {
+  background: var(--navy-mid);
+  padding: 2rem;
+  text-align: center;
+}
+
+.statCard strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.statCard span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  margin-top: 0.25rem;
+}
+
+/* COURSES */
+.coursesSection { background: var(--off-white); }
+
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.courseCard {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.courseCard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.courseIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.courseLevel {
+  display: inline-block;
+  background: rgba(26, 86, 219, 0.1);
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  margin-bottom: 0.75rem;
+}
+
+.courseCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.courseCard p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.courseMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+  border-top: 1px solid var(--gray-100);
+  padding-top: 1rem;
+}
+
+.courseMeta a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--blue);
+  font-weight: 500;
+  transition: gap 0.2s;
+}
+.courseMeta a:hover { gap: 8px; }
+
+/* WHY US */
+.whySection { background: var(--white); }
+
+.whyInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.whyRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.whyCard {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+.whyCard:hover { box-shadow: var(--shadow); }
+
+.whyIcon {
+  width: 44px;
+  height: 44px;
+  background: rgba(26, 86, 219, 0.08);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.whyCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--navy);
+}
+
+.whyCard p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+/* BLOG */
+.blogSection { background: var(--off-white); }
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.blogCard {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.blogCard:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.blogMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--gray-400);
+}
+
+.blogCat {
+  background: rgba(26, 86, 219, 0.08);
+  color: var(--blue);
+  font-weight: 600;
+  font-family: var(--font-display);
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  font-size: 0.72rem;
+}
+
+.blogCard h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+
+.blogCard p {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue);
+  font-family: var(--font-display);
+  transition: gap 0.2s;
+}
+.readMore:hover { gap: 8px; }
+
+@media (max-width: 1000px) {
+  .coursesGrid { grid-template-columns: repeat(2, 1fr); }
+  .blogGrid { grid-template-columns: repeat(2, 1fr); }
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+  .whyInner { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 600px) {
+  .coursesGrid { grid-template-columns: 1fr; }
+  .blogGrid { grid-template-columns: 1fr; }
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: 7rem 0 3rem; min-height: auto; }
+}

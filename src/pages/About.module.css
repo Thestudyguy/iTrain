@@ -1,0 +1,156 @@
+.pageHero {
+  background: var(--navy);
+  padding: 9rem 0 4rem;
+  margin-top: 0;
+}
+
+.pageHero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.pageHero p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 560px;
+}
+
+.mvGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.mvCard {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: box-shadow 0.2s;
+}
+.mvCard:hover { box-shadow: var(--shadow-lg); }
+
+.mvIcon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+
+.mvCard h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.65rem;
+}
+
+.mvCard p {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.valueCard {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.valueCard:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+
+.valueIcon { font-size: 2rem; display: block; margin-bottom: 0.75rem; }
+
+.valueCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.valueCard p { font-size: 0.875rem; color: var(--gray-600); line-height: 1.6; }
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.teamCard:hover { box-shadow: var(--shadow); }
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  background: rgba(26, 86, 219, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 auto 1rem;
+}
+
+.teamCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+
+.teamCard span {
+  font-size: 0.85rem;
+  color: var(--gray-400);
+}
+
+.teamNote {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, var(--blue) 0%, #1e40af 100%);
+  padding: 4rem 0;
+}
+
+.ctaInner {
+  text-align: center;
+}
+
+.ctaInner h2 {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.ctaInner p {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.75rem;
+}
+
+@media (max-width: 900px) {
+  .mvGrid { grid-template-columns: 1fr; }
+  .valuesGrid { grid-template-columns: repeat(2, 1fr); }
+  .teamGrid { grid-template-columns: 1fr; max-width: 400px; }
+}
+
+@media (max-width: 560px) {
+  .valuesGrid { grid-template-columns: 1fr; }
+}
